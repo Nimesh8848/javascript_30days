@@ -165,4 +165,17 @@ const squa= function (n) {
   return n * n
 }
 
-console.log(squa(2))
+console.log(squa(2));
+
+// Callback function: squares the given number
+const callback = (n) => {
+  return n ** 2;
+}
+
+// Function that takes a callback and a number, and performs a calculation
+function cube(callback, n) {
+  return callback(n) * n;
+}
+
+// Call the cube function with the callback and a number (3)
+console.log(cube(callback, 3));
