@@ -124,3 +124,11 @@ const person = {
     console.log(sq);
   }
   square();
+  function addtwonumbers(){
+    a=10;
+    b=20;
+    sum=a+b;
+    return sum;
+
+  }
+  console.log(addtwonumbers());
