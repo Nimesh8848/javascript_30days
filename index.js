@@ -179,4 +179,3 @@ function cube(callback, n) {
 
 // Call the cube function with the callback and a number (3)
 console.log(cube(callback, 3));
-console.log("hellow orld");
