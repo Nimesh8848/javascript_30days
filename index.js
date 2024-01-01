@@ -155,3 +155,14 @@ const person = {
   }
   const num=[1,2,3,4,5];
   console.log(sumArray(num));
+
+  const anonymous =function(){
+    console.log('Hello');
+  }
+
+  // Function expression
+const squa= function (n) {
+  return n * n
+}
+
+console.log(squa(2))
