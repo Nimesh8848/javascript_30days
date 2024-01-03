@@ -184,3 +184,20 @@ function sayHello(){
   console.log('hello');
 }
 setInterval(sayHello,2000);
+
+const countrie = ['Finland', 'Estonia', 'Sweden', 'Norway']
+i=0;
+countrie.forEach(function (country, index, arr) {
+  console.log(i, country.toUpperCase())
+})
+function printUser(user) {
+  let access; // Declare the access variable outside of the if-else statement
+  
+  if (user.admin) {
+    access = "ADMIN";
+  } else {
+    access = "user";
+  }
+
+  console.log(`Access level: ${access}`);
+}
