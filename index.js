@@ -185,9 +185,9 @@ function sayHello(){
 }
 setInterval(sayHello,2000);
 
-const countrie = ['Finland', 'Estonia', 'Sweden', 'Norway']
-i=0;
-countrie.forEach(function (country, index, arr) {
+const countrie = ['Finland', 'Nepal', 'Sweden', 'Norway']
+
+countrie.forEach(function (country, i, arr) {
   console.log(i, country.toUpperCase())
 })
 function printUser(user) {
@@ -201,3 +201,22 @@ function printUser(user) {
 
   console.log(`Access level: ${access}`);
 }
+
+const numnbers =[1,2,3,4,5,6,7,8];
+const even =numnbers.filter((numnbers)=>{
+  return numnbers%2===0;
+});
+console.log(even);
+
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const firstEvenNum = numbers.find((n) => n % 2 === 0)
+const firstOddNum = numbers.find((n) => n % 2 !== 0)
+console.log(firstEvenNum) // 0
+console.log(firstOddNum) // 1
+
+const array = [10, 20, 30, 40, 50];
+
+const index = array.findIndex(element => element === 40);
+
+console.log(index); 
+
