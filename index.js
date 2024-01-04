@@ -220,3 +220,40 @@ const index = array.findIndex(element => element === 40);
 
 console.log(index); 
 
+class Person {
+  constructor(firstName, lastName) {
+    console.log(this) // Check the output from here
+    this.firstName = firstName
+    this.lastName = lastName
+  }
+}
+
+const per= new Person('Nimesh','Mathema')
+
+console.log(per)
+
+
+
+
+const human = {
+  _name: '',
+
+  set name(newname) {
+    if (typeof newname === 'string') {
+      this._name = newname;
+    } else {
+      console.error('Invalid format');
+    }
+  },
+  get name() {
+    return this._name;
+  }
+};
+
+// Using the setter and getter
+human.name = 'Nimesh';
+console.log(human.name); // Outputs: Nimesh
+
+// Attempting to set name to a number
+human.name = 7; // Outputs: Invalid format
+
