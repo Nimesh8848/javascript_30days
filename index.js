@@ -235,25 +235,45 @@ console.log(per)
 
 
 
-const human = {
+// const human = {
+//   _name: '',
+
+//   set name(newname) {
+//     if (typeof newname === 'string') {
+//       this._name = newname;
+//     } else {
+//       console.error('Invalid format');
+//     }
+//   },
+//   get name() {
+//     return this._name;
+//   }
+// };
+
+// // Using the setter and getter
+// human.name = 'Nimesh';
+// console.log(human.name); // Outputs: Nimesh
+
+// // Attempting to set name to a number
+// human.name = 7; // Outputs: Invalid format
+
+const human={
   _name: '',
 
-  set name(newname) {
-    if (typeof newname === 'string') {
+  set name(newname){
+    if(typeof newname === 'string'){
       this._name = newname;
-    } else {
-      console.error('Invalid format');
-    }
+    }else{
+      console.error("Invalid format");
+        }
+
   },
-  get name() {
+  get name(){
     return this._name;
   }
 };
 
-// Using the setter and getter
-human.name = 'Nimesh';
-console.log(human.name); // Outputs: Nimesh
-
-// Attempting to set name to a number
-human.name = 7; // Outputs: Invalid format
-
+human.name('Nimesh');
+console.log(human.name);
+human.name=7;
+//helloworld
